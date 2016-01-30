@@ -117,6 +117,11 @@ function commonOptions(program) {
       '--hasteExternals',
       'Allow direct import of React Native\'s internal Haste modules [false]',
       false
+    )
+    .option(
+      '--packagerCacheDir [packagerCacheDir]',
+      'Directory in which to cache the React Native bundle and source maps',
+      null
     );
 }
 
