@@ -58,21 +58,4 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
       super.onBackPressed();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        if (mReactInstanceManager != null) {
-            mReactInstanceManager.onPause();
-        }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        if (mReactInstanceManager != null) {
-            mReactInstanceManager.onResume(this, this);
-        }
-    }
 }
